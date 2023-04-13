@@ -1,0 +1,664 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Invisible Elements*/
+
+.invisible {
+  display: none;
+}
+
+/* Index.html */
+
+#navbar-container {
+  background-color: #f5f7fc;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-right: 8px;
+}
+
+#navbar li {
+  width: 100px;
+  height: 42px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li:nth-child(2) {
+  border-radius: 10px;
+  background-color: #3ad952cc;
+}
+
+#navbar li:nth-child(2) a {
+  color: rgb(255, 255, 255);
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 2%;
+  color: hsl(0, 0%, 22%);
+}
+
+#background-img-container {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#background-img-container img {
+  width: 80%;
+  border-radius: 12px;
+  margin: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#welcome-message-container {
+  margin: 1%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: 80%;
+  height: 100vh;
+  border-radius: 12px;
+}
+
+#welcome-message-container p {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 3%;
+}
+
+
+/* Sign up form*/
+.signup-form-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#signup-username,
+#signup-email, #signup-password {
+  padding: 0.7rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#signup-username:focus,
+#signup-email:focus,
+#signup-password:focus {
+  border-color: #4f7bf6;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-buttons label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+
+.radio-buttons img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.radio-buttons input[type="radio"]:checked + img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#signup-btn {
+  background-color: #4f7bf6;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#signup-btn:hover {
+  background-color: hsl(228, 68%, 54%);
+}
+
+/* Login site, Delete account site */
+
+.form-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form, #delete-account-page-form {
+  margin-top: 3%;
+  border-radius: 8px;
+  width: 25vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#login-email, #login-password, #delete-account-page-password, #delete-account-page-email {
+  width: 80%;
+  height: 10%;
+  border: 1px solid rgb(164, 164, 164);
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+#login-btn {
+  width: 80%;
+  background-color: #4f7bf6;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#delete-account-page-btn {
+  width: 80%;
+  background-color: #f64f4f;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Logged site */
+
+#logged-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fc;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+  width: 10%;
+}
+
+#user-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#current-user-img-container {
+  width: 4%;
+}
+#current-user {
+  margin: 0 3% 0 1%;
+}
+
+.current-user-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#logged-header h1, #logged-header p {
+  margin: 0px 32px;
+}
+
+#logged-container {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.my-updates {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  max-height: 85vh;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 8px;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.my-updates h2 {
+  margin-top: 5%;
+}
+
+#my-status-updates{
+  overflow: auto;
+  border-radius: 8px;
+  width: 85%;
+  height: 70%;
+  margin: 3% 0;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#my-status-updates li {
+  height: 3.5rem;
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  list-style: none;
+}
+
+#new-status-update-form {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 8px;
+  width: 85%;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#new-status-update {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 60%;
+  height: 100%;
+  font-size: 20px;
+}
+
+#new-status-update-btn {
+  width: 15%;
+  background-color: #4f7bf6;
+  color: white;
+  padding: 0.7rem;
+  margin-left: 0.3rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.other-users-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 8px;
+  margin: 3%;
+  padding: 3%;
+}
+
+#other-users {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+#other-users h2 {
+  margin: 2%;
+}
+
+.other-users-img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.other-user-btn {
+  border-bottom: 1px solid rgb(192, 192, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  border-radius: 8px;
+}
+
+.other-user-btn p {
+  margin-left: 1%;
+}
+
+.delete-account {
+  grid-column: 3 / 4;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5%;
+}
+
+#logout-form {
+  width: 25%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0px;
+}
+
+#logout-btn {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(58, 58, 58);
+  color: rgb(239, 239, 239);
+  font-size: 14px;
+}
+
+#delete-account-form {
+  width: 25%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0px;
+}
+
+#delete-account-btn {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(255, 66, 66);
+  color: rgb(239, 239, 239);
+  font-size: 10px;
+}
+
+.other-user-btn:hover {
+  background-color: rgb(97, 181, 212);
+  color: rgb(255, 255, 255);
+}
+
+/* Visited User Profile */
+
+#visited-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fc;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#visited-header h1 {
+  margin-right: 5%;
+  color: #202020;
+}
+
+#other-user-profile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+#other-user-profile-info {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#other-user-profile-posts {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+#visited-user-img {
+  width: 25%;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+#visited-user-name {
+  font-size: 2rem;
+}
+
+#visited-user-contact {
+  font-size: 1.05rem;
+}
+
+#visited-post-container {
+  width: 80%;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(0, 0, 0);
+}
+
+#visited-post-like-btn {
+  width: 7%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+#visited-post-like-btn svg {
+  stroke: rgb(255, 40, 40);
+}
+
+/* Hover och effekter */
+#navbar li:nth-child(2):hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  background-color: #00d620cc;
+}
+
+#visited-post-like-btn svg:hover {
+  fill: rgb(255, 40, 40);
+}
+
+#logout-btn:hover {
+  background-color: rgb(10, 10, 10);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#delete-account-btn:hover, #delete-account-page-btn:hover {
+  background-color: rgb(255, 40, 40);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#new-status-update-btn:hover {
+  background-color: #215bf9;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#login-btn:hover {
+  background-color: hsl(228, 68%, 54%);
+}
+
+
+/* Smartphones (landscape) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #welcome-message-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+
+  #background-img-container {
+    flex-direction: row;
+  }
+
+  #welcome-message-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #welcome-message-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #navbar li {
+    width: 100px;
+    height: 42px;
+  }
+
+  #navbar li a {
+    font-size: 1rem;
+  }
+
+  #background-img-container {
+    flex-direction: row;
+  }
+
+  #background-img-container img {
+    width: 50%;
+  }
+
+  #welcome-message-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #welcome-message-container p {
+    font-size: 1.4rem;
+  }
+
+  .form-container h1 {
+    font-size: 2.4rem;
+  }
+  
+  #login-email, #login-password {
+    width: 80%;
+    height: 10%;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  
+  #login-btn {
+    width: 80%;
+    height: 10%;
+    background-color: #4f7bf6;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  
+
+  #welcome-message-container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #background-img-container img {
+    width: 60%;
+  }
+
+  #welcome-message-container p {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  #navbar li {
+    width: 120px;
+    height: 50px;
+    
+  }
+
+  #navbar li a {
+    font-size: 1.2rem;
+  }
+  #background-img-container img {
+    width: 60%;
+  }
+
+  #welcome-message-container p {
+    font-size: 2rem;
+  }
+}

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url /fe22-js2-slutprojekt-ignacio-cerda/ --dist-dir docs",
     "clean": "del-cli ./.parcel-cache ./docs ./dist"
   },
   "keywords": [],

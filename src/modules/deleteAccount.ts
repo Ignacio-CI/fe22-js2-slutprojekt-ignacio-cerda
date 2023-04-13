@@ -35,7 +35,7 @@ const deleteAccount = async (email: string, password: string) => {
           await deleteUser(currentUser);
           localStorage.removeItem("currentUser");
   
-          window.location.assign("./index.html");
+          window.location.assign("../index.html");
         }
       } else {
         console.log("Failed to reauthenticate user");

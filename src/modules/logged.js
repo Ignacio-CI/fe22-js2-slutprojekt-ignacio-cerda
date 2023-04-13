@@ -67,7 +67,7 @@ const logoutUser = async () => {
         await signOut(auth);
         localStorage.removeItem("currentUser");
         console.log("User signed out successfully");
-        window.location.assign("./index.html");
+        window.location.assign("../index.html");
     }
     catch (error) {
         console.log("Error signing out:", error);

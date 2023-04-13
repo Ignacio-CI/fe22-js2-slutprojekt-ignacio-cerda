@@ -30,7 +30,7 @@ const deleteAccount = async (email, password) => {
                 await remove(userRef);
                 await deleteUser(currentUser);
                 localStorage.removeItem("currentUser");
-                window.location.assign("./index.html");
+                window.location.assign("../index.html");
             }
         }
         else {

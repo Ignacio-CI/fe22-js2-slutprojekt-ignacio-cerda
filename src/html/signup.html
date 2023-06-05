@@ -7,68 +7,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../index.css" rel="stylesheet">
     <script type="module" src="../modules/index.ts"></script>
     <title>Sign Up</title>
   </head>
-  <body>
-    <div class="signup-form-container">
-      <form class="signup-form">
-        <div class="form-field">
+  <body class="w-full h-screen">
+    <div class="mt-8 mx-auto max-w-md">
+      <div class="bg-white py-8 px-4 shadow">
+        <h1 class="font-bold uppercase text-stone-700 text-2xl text-center px-3 py-5">Create an account</h1>
+        <form class="space-y-5">
           <input
+            class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
             type="text"
             id="signup-username"
             name="username"
             placeholder="Username"
             required
           />
-        </div>
-        <div class="form-field">
-          <input 
+          <input
+            class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400" 
             type="email" 
             id="signup-email" 
             name="email"
             placeholder="Email"
             required 
           />
-        </div>
-
-        <div class="form-field">
           <input
+            class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
             type="password"
             id="signup-password"
             name="password"
             placeholder="Password"
             required
           />
-        </div>
-
-        <div class="form-field">
-          <label>Choose Avatar</label>
-          <div class="radio-buttons">
-            <label>
-              <img src="../media/avatar1.png" alt="Avatar 1" />
-              <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar1.png?alt=media&token=5122e8da-3241-4078-93d0-6ecc6a3ce9c1" required />
-            </label>
-            <label>
-              <img src="../media/avatar2.png" alt="Avatar 2" />
-              <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar2.png?alt=media&token=f3505fe9-0f62-4eac-93d9-17e9fba820e6" required />
-            </label>
-            <label>
-              <img src="../media/avatar3.png" alt="Avatar 3" />
-              <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar3.png?alt=media&token=3207fbba-524e-403f-bd95-85dbb903bdc7" required />
-            </label>
-            <label>
-              <img src="../media/avatar4.png" alt="Avatar 3" />
-              <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar4.png?alt=media&token=d2359d47-d6b5-47f4-9b83-04a8dbee0881" required />
-            </label>
+          <div class="w-full px-3 py-2">
+            <label class="font-bold uppercase text-stone-700">Choose Avatar</label>
+            <div class="flex justify-evenly items-center space-x-2 pt-3">
+              <label class="flex flex-col items-center">
+                <img src="../media/avatar1.png" alt="Avatar 1" class="rounded-full"/>
+                <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar1.png?alt=media&token=5122e8da-3241-4078-93d0-6ecc6a3ce9c1" required />
+              </label>
+              <label class="flex flex-col items-center">
+                <img src="../media/avatar2.png" alt="Avatar 2" class="rounded-full"/>
+                <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar2.png?alt=media&token=f3505fe9-0f62-4eac-93d9-17e9fba820e6" required />
+              </label>
+              <label class="flex flex-col items-center">
+                <img src="../media/avatar3.png" alt="Avatar 3" class="rounded-full"/>
+                <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar3.png?alt=media&token=3207fbba-524e-403f-bd95-85dbb903bdc7" required />
+              </label>
+              <label class="flex flex-col items-center">
+                <img src="../media/avatar4.png" alt="Avatar 3" class="rounded-full"/>
+                <input type="radio" class="avatar" name="avatar" value="https://firebasestorage.googleapis.com/v0/b/fe22-js2-slutprojekt.appspot.com/o/avatar4.png?alt=media&token=d2359d47-d6b5-47f4-9b83-04a8dbee0881" required />
+              </label>
+            </div>
           </div>
-        </div>
-
-        <div class="form-field">
-          <button type="submit" id="signup-btn">Submit</button>
-        </div>
-      </form>
+          <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 cursor-pointer duration-200" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

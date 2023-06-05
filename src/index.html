@@ -7,25 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./index.css" rel="stylesheet">
     <script type="module" src="./modules/index.ts"></script>
     <title>Social Media</title>
   </head>
-  <body>
-    <header id="navbar-container">
-      <ul id="navbar">
-        <li>
-          <a href="./html/login.html">Login</a>
+  <body class="w-full min-h-screen">
+    <header class="w-full h-20 bg-sky-500 flex items-center justify-end shadow-md z-20">
+      <ul class="w-full flex items-center justify-end mr-8 space-x-4">
+        <li class="text-lg hover:text-slate-300 duration-200 text-white">
+          <a href="./html/login.html" class="">Login</a>
         </li>
-        <li>
+        <li class="bg-green-500 p-2 rounded-lg text-white hover:bg-green-600 hover:text-slate-300 duration-200 text-lg">
           <a href="./html/signup.html" class="button">Sign up</a>
         </li>
       </ul>
     </header>
-    <div id="background-img-container">
-      <img src="./media/background.png" alt="">
-      <div id="welcome-message-container">
-        <p>Hey there! Welcome to SocialBuddies, the coolest spot to hang out, make new friends, and just have a blast! We're all about good vibes, fun chats, and nice moments. SocialBuddies is the place where everyone's invited to join the party, so why not jump in and see what all the hype is about? Sign up now, and let's start making memories, one buddy at a time!</p>
+    <div class="container w-full h-full mx-auto py-10 flex flex-col md:flex-row justify-center items-center">
+      <img class="w-80 rounded-lg shadow-md" src="./media/background.png" alt="">
+      <div class="w-full p-8">
+        <p class="text-2xl">Hey there! Welcome to SocialBuddies, the coolest spot to hang out, make new friends, and just have a blast! We're all about good vibes, fun chats, and nice moments. SocialBuddies is the place where everyone's invited to join the party, so why not jump in and see what all the hype is about? Sign up now, and let's start making memories, one buddy at a time!</p>
       </div>
     </div>
 
